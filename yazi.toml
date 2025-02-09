@@ -23,3 +23,8 @@ edit = [
 open = [
 	{ run = 'xdg-open "$@"', desc = "Open", for = "unix" },
 ]
+
+[plugin]
+prepend_previewers = [
+	{ mime = "text/csv", exec = "miller", run = "miller" }
+]
