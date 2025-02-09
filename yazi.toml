@@ -26,5 +26,6 @@ open = [
 
 [plugin]
 prepend_previewers = [
-	{ mime = "text/csv", exec = "miller", run = "miller" }
+	{ mime = "text/csv", run = "miller" },
+	{ mime = "application/json", run = "miller" },
 ]
